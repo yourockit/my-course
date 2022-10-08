@@ -1,2 +1,2 @@
-# goit-fe-course
-My_homework GoIt
+# my-course
+my-hw
