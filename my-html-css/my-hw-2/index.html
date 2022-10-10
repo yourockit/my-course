@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <ul>
-            <li>
-                <a href="#">WebStudio</a>
+        <ul class="header container">
+            <li class="header-nav">
+                <a href="#" class="logo">Web<span>Studio</span></a>
                 <nav>
-                    <ul>
+                    <ul class="nav">
                         <li>
                             <a href="#">Студия</a>
                         </li>
@@ -26,12 +30,12 @@
                         </li>
                     </ul>
                 </nav>
-                <ul>
-                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <ul class="address">
+                    <li><a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="telephone" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="header-main">
                 <h1>Эффективные решения для вашего бизнеса</h1>
                 <button type="button">Заказать услугу</button>
             </li>
@@ -39,69 +43,73 @@
 
     </header>
     <main>
-        <ul>
-            <li>
-                <h2>Внимание к деталям</h2>
-                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-            </li>
-            <li>
-                <h2>Пунктуальность</h2>
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-            </li>
-            <li>
-                <h2>Планирование</h2>
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-            </li>
-            <li>
-                <h2>Современные технологии</h2>
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>
-        </ul>
-        <section>
-            <h2>Чем мы занимаемся</h2>
+        <div class="container">
             <ul>
-                <li><img src="images/img.jpg" alt="Планшетный компьтер" width="370"></li>
-                <li><img src="images/img-1.jpg" alt="Мобильный телефон, ноутбук" width="370"></li>
-                <li><img src="images/img-2.jpg" alt="Графический планшет" width="370"></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
-                <li><img src="images/img-3.jpg" alt="Игорь Демьяенко" width="270">
-                    <ul>
-                        <li>Игорь Демьяненко</li>
-                        <li>Product Designer</li>
-                    </ul>
+                <li>
+                    <h2>Внимание к деталям</h2>
+                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li><img src="images/img-4.jpg" alt="Ольга Репина" width="270">
-                    <ul>
-                        <li>Ольга Репина</li>
-                        <li>Frontend Developer</li>
-                    </ul>
+                <li>
+                    <h2>Пунктуальность</h2>
+                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li><img src="images/img-5.jpg" alt="Николай Тарасов" width="270">
-                    <ul>
-                        <li>Николай Тарасов</li>
-                        <li>Marketing</li>
-                    </ul>
+                <li>
+                    <h2>Планирование</h2>
+                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li><img src="images/img-6.jpg" alt="Михаил Ермаков" width="270">
-                    <ul>
-                        <li>Михаил Ермаков</li>
-                        <li>UI Designer</li>
-                    </ul>
+                <li>
+                    <h2>Современные технологии</h2>
+                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
-        </section>
+            <section>
+                <h2>Чем мы занимаемся</h2>
+                <ul>
+                    <li><img src="images/img.jpg" alt="Планшетный компьтер" width="370"></li>
+                    <li><img src="images/img-1.jpg" alt="Мобильный телефон, ноутбук" width="370"></li>
+                    <li><img src="images/img-2.jpg" alt="Графический планшет" width="370"></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Наша команда</h2>
+                <ul>
+                    <li><img src="images/img-3.jpg" alt="Игорь Демьяенко" width="270">
+                        <ul>
+                            <li>Игорь Демьяненко</li>
+                            <li>Product Designer</li>
+                        </ul>
+                    </li>
+                    <li><img src="images/img-4.jpg" alt="Ольга Репина" width="270">
+                        <ul>
+                            <li>Ольга Репина</li>
+                            <li>Frontend Developer</li>
+                        </ul>
+                    </li>
+                    <li><img src="images/img-5.jpg" alt="Николай Тарасов" width="270">
+                        <ul>
+                            <li>Николай Тарасов</li>
+                            <li>Marketing</li>
+                        </ul>
+                    </li>
+                    <li><img src="images/img-6.jpg" alt="Михаил Ермаков" width="270">
+                        <ul>
+                            <li>Михаил Ермаков</li>
+                            <li>UI Designer</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
-        <a href="#">WebStudio</a>
-        <address>
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <section class="container">
+            <a href="#">WebStudio</a>
+            <address>
+                <p>г. Киев, пр-т Леси Украинки, 26</p>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </address>
+        </section>
     </footer>
 </body>
 
