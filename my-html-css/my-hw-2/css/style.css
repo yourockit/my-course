@@ -39,8 +39,6 @@ a {
 .logo {
     width: 145px;
     height: 31px;
-    left: 215px;
-    top: 24px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -90,10 +88,173 @@ a {
     color: #757575;
 }
 
+.header-bg {
+    background: #2F303A;
+}
+
 .header-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 600px;
+}
+
+.header-main h1 {
+    width: 696px;
+    height: 120px;
+    text-align: center;
+    /* font-family: 'Roboto'; */
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.header-main button {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.header-main>button>p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 20px; */
+    margin: 0 0 5px 0;
+}
+
+.main {
+    margin-top: 94px;
+}
+
+.details {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.details>li {
+    width: 270px;
+}
+
+.details>li>h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #212121;
+    margin: 0 0 10px 0;
+}
+
+.details>li>p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0 0 94px 0;
+}
+
+.preview>h2 {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.preview>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team {
+    height: 648px;
+    background: #F5f4fa;
+}
+
+.team>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.team>div>h2 {
+    margin: 0 0 50px 0;
+}
+
+.team-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+}
+
+.team-wrap>li {
+    background: #ffffff;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: #212121;
+    margin: 30px 0 0 0;
+}
+
+.job {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: #757575;
+    margin: 10px 0 30px 0;
+}
+
+.footer-wrap {
+    height: 252px;
+    background: #2f303a;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+}
+
+.footer>address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+.address>a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
 }
