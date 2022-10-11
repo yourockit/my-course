@@ -254,6 +254,7 @@ a {
     font-size: 14px;
     line-height: 1.7;
     color: #ffffff;
+    margin: 20px 0 0 0;
 }
 
 .address>a {
@@ -262,4 +263,5 @@ a {
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
 }
