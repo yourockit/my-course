@@ -191,8 +191,13 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: inherit;
+}
+
+.card>h2,
+.button-wrap {
+    margin-bottom: 50px;
 }
 
 .card-content {
