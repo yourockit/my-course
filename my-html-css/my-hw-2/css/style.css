@@ -1,7 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    width: 1600px;
-    margin: auto;
+    width: 100%;
 }
 
 ul,
@@ -25,12 +24,17 @@ a {
     margin: auto;
 }
 
-.header-nav {
+.topline {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
     font-size: 14px;
+}
+
+.header-wrap {
+    border: none;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -46,14 +50,14 @@ a {
     color: #000000;
 }
 
-.nav {
+.topline-nav {
     display: flex;
     justify-content: space-between;
     width: 294px;
     margin-right: 331px;
 }
 
-.nav>li>a {
+.topline-nav>li>a {
     font-weight: 500;
     color: #212121;
 }
@@ -100,8 +104,9 @@ a {
     margin-bottom: 30px;
 }
 
-.header-main>button {
-    width: 200px;
+button {
+    padding: 0 32px 0 32px;
+    margin-right: 8px;
     height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -114,13 +119,6 @@ a {
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
-}
-
-.header-main>button>p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
 }
 
 .details-wrap {
@@ -169,12 +167,27 @@ a {
     justify-content: space-between;
 }
 
-.team-wrap {
+.preview li {
+    width: 370px;
+    height: 294px;
+}
+
+.card-home-wrap {
     height: 648px;
     background: #F5f4fa;
 }
 
-.team {
+.card-portfolio-wrap {
+    height: 1548px;
+}
+
+.card-portfolio-wrap button {
+    background: #F5F4FA;
+    color: #212121;
+    box-shadow: none;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,16 +195,46 @@ a {
     height: inherit;
 }
 
-.team-content {
+.card-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: inherit;
 }
 
-.team-content>li {
+.card-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-home>li {
     background: #ffffff;
+    width: 270px;
     height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-portfolio>li {
+    background: #ffffff;
+    width: 370px;
+    height: 404px;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
+
+.card-home img {
+    display: block;
+    text-align: center;
+    /* width: 270px;
+    height: 260px; */
+}
+
+.card-portfolio img {
+    display: block;
+    text-align: center;
+    /* width: 270px;
+    height: 260px; */
 }
 
 .name-wrap {
@@ -209,11 +252,23 @@ a {
     margin-bottom: 10px;
 }
 
-.job {
+.name-card {
+    font-weight: 700;
+    font-size: 18px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.name-description {
     font-weight: 400px;
     font-size: 16px;
     text-align: center;
     color: #757575;
+}
+
+.card-portfolio>li>ul>li {
+    padding-left: 24px;
+    text-align: left;
 }
 
 .footer-wrap {
