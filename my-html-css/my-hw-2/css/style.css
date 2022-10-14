@@ -6,7 +6,8 @@ body {
 ul,
 li,
 h1,
-h2 {
+h2,
+p {
     padding: 0;
     margin: 0;
 }
@@ -24,6 +25,9 @@ a {
     margin: auto;
 }
 
+
+/*-------------------------TOPLINE-------------------------*/
+
 .topline {
     display: flex;
     justify-content: space-between;
@@ -39,11 +43,14 @@ a {
 
 .logo {
     width: 145px;
-    height: 31px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     color: #2196f3;
+}
+
+.footer>.logo>span {
+    color: #ffffff;
 }
 
 .logo span {
@@ -80,6 +87,9 @@ a {
     color: #757575;
 }
 
+
+/*-------------------------HEADER-------------------------*/
+
 .header-bg {
     background: #2F303A;
 }
@@ -104,6 +114,9 @@ a {
     margin-bottom: 30px;
 }
 
+
+/*BUTTON HEADER HOME*/
+
 button {
     padding: 0 32px 0 32px;
     margin-right: 8px;
@@ -121,70 +134,11 @@ button {
     color: #FFFFFF;
 }
 
-.details-wrap {
-    margin-top: 94px;
-}
 
-.details {
-    width: 1170px;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
+/*-------------------------MAIN ALL-------------------------*/
 
-.details>li {
-    width: 270px;
-}
-
-.details>li>h2 {
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #212121;
-    margin: 0 0 10px 0;
-}
-
-.details>li>p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin: 0 0 94px 0;
-}
-
-.preview-wrap {
-    margin-bottom: 94px;
-}
-
-.preview>h2 {
-    text-align: center;
-    margin: 0 0 50px 0;
-}
-
-.preview>ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.preview li {
-    width: 370px;
-    height: 294px;
-}
-
-.card-home-wrap {
-    height: 648px;
-    background: #F5f4fa;
-}
-
-.card-portfolio-wrap {
-    height: 1548px;
-}
-
-.card-portfolio-wrap button {
-    background: #F5F4FA;
-    color: #212121;
-    box-shadow: none;
+main>section {
+    padding: 94px 0 94px 0;
 }
 
 .card {
@@ -192,24 +146,84 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: inherit;
-}
-
-.card>h2,
-.button-wrap {
-    margin-bottom: 50px;
+    /* height: inherit; */
 }
 
 .card-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: inherit;
+    margin-top: 50px;
 }
 
-.card-portfolio {
+.name-wrap {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-description {
+    font-weight: 400px;
+    font-size: 16px;
+    text-align: center;
+    color: #757575;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+/* -------------------------MAIN HOME-------------------------*/
+
+
+/*SECTION -> TEXT-CONTENT*/
+
+.text-content {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.text-content>li {
+    width: 270px;
+}
+
+.text-content h2 {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #212121;
+    margin: 0 0 10px 0;
+}
+
+.text-content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+
+/*SECTION -> SERVICES*/
+
+.services>h2 {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.services>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*SECTION -> CARD-HOME-TEAM*/
+
+.card-home-team {
+    background: #F5f4fa;
 }
 
 .card-home>li {
@@ -220,33 +234,9 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
-.card-portfolio>li {
-    background: #ffffff;
-    width: 370px;
-    height: 404px;
-    border: 1px solid #EEEEEE;
-    margin-bottom: 30px;
-}
-
 .card-home img {
     display: block;
     text-align: center;
-    /* width: 270px;
-    height: 260px; */
-}
-
-.card-portfolio img {
-    display: block;
-    text-align: center;
-    /* width: 270px;
-    height: 260px; */
-}
-
-.name-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 108px;
 }
 
 .name {
@@ -254,27 +244,47 @@ button {
     font-size: 16px;
     text-align: center;
     color: #212121;
-    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+
+/*-------------------------MAIN-PORTFOLIO-------------------------*/
+
+
+/*SECTION -> CARD-PORTFOLIO*/
+
+.card-portfolio button {
+    background: #F5F4FA;
+    color: #212121;
+    box-shadow: none;
+}
+
+.card-portfolio>li {
+    background: #ffffff;
+    width: 370px;
+    height: 404px;
+    margin-bottom: 30px;
+}
+
+.card-portfolio .name-wrap {
+    border: 1px solid #EEEEEE;
 }
 
 .name-card {
     font-weight: 700;
     font-size: 18px;
     color: #212121;
-    margin-bottom: 10px;
+    padding: 30px 0 0 24px;
+    text-align: left;
 }
 
-.name-description {
-    font-weight: 400px;
-    font-size: 16px;
-    text-align: center;
-    color: #757575;
-}
-
-.card-portfolio>li>ul>li {
+.card-portfolio .name-description {
     padding-left: 24px;
     text-align: left;
 }
+
+
+/*-------------------------FOOTER-------------------------*/
 
 .footer-wrap {
     height: 252px;
@@ -291,10 +301,7 @@ button {
 .footer>address {
     display: flex;
     flex-direction: column;
-}
-
-.footer>a>span {
-    color: #ffffff;
+    margin-top: 20px;
 }
 
 .address>p {
@@ -302,7 +309,7 @@ button {
     font-weight: 400;
     font-size: 14px;
     color: #ffffff;
-    margin: 20px 0 0 0;
+    line-height: 1.7;
 }
 
 .address>a {
@@ -311,5 +318,4 @@ button {
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
-    margin-top: 9px;
 }
