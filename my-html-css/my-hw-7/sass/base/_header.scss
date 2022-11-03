@@ -1,0 +1,21 @@
+.header-section {
+    background: url(../images/Img-header.jpg), rgba(47, 48, 58, 0.4);
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+    }
+    &__title {
+        width: 696px;
+        height: 120px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+}

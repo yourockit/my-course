@@ -1,0 +1,182 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &__btn-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        color: #212121;
+        background: #FFFFFF;
+        border: 1px solid #eeeeee;
+        border-radius: 50%;
+        transition: background 250ms, color 250ms;
+    }
+    &__btn-close:hover {
+        background: #eeeeee;
+        color: #2196F3;
+    }
+    &__btn-close-icon {
+        width: 18px;
+        height: 11px;
+        fill: currentColor;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: #212121;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.modal-form {
+    &__field {
+        position: relative;
+        width: 448px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    &__input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding-left: 35px;
+        transition: border 250ms linear;
+    }
+    &__label {
+        position: absolute;
+        top: 50%;
+        left: 35px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #757575;
+        transform: translateY(-50%);
+        transition: transform 250ms linear;
+    }
+    &__icon-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        line-height: 0;
+        color: #212121;
+        transform: translateY(-50%);
+        transition: color 250ms;
+    }
+    &__textarea {
+        width: 100%;
+        height: 120px;
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding: 6px 4px 4px 12px;
+    }
+    &__label-textarea {
+        position: absolute;
+        top: 20px;
+        left: 12px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #757575;
+    }
+    &__icon {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+    }
+    &__label-checkbox {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: #757575;
+    }
+    &__input-checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: absolute;
+    }
+    &__icon-checkbox-wrapper {
+        display: inline-block;
+        margin-right: 7px;
+    }
+    &__icon-checkbox {
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+    &__link-checkbox {
+        color: #2196F3;
+        text-decoration: underline;
+        text-underline-position: under;
+        margin-left: 4px;
+    }
+    &__submit {
+        width: 200px;
+        margin: auto;
+    }
+}
+
+.modal-form__input:focus+.modal-form__label,
+.modal-form__input:not(:placeholder-shown)+.modal-form__label {
+    transform: translate(-35px, -35px);
+}
+
+.modal-form__textarea:focus+.modal-form__label,
+.modal-form__textarea:not(:placeholder-shown)+.modal-form__label {
+    transform: translate(-12px, -35px);
+}
+
+.modal-form__input:focus~.modal-form__icon-wrapper {
+    color: #2196F3;
+}
+
+.modal-form__input:focus,
+.modal-form__textarea:focus {
+    border: 1px solid rgb(33, 150, 243);
+    border-radius: 4px;
+    outline: none;
+}
+
+.modal-form__icon-checkbox-wrapper>.modal-form__icon-checkbox:nth-child(1) {
+    opacity: 0;
+}
+
+.modal-form__input-checkbox:checked+.modal-form__icon-checkbox-wrapper>.modal-form__icon-checkbox:nth-child(1) {
+    opacity: 1;
+}
+
+.modal-form__input-checkbox:checked+.modal-form__icon-checkbox-wrapper>.modal-form__icon-checkbox:nth-child(2) {
+    opacity: 0;
+}

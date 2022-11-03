@@ -1,0 +1,112 @@
+.btn-studio {
+    width: 200px;
+}
+
+.page-footer {
+    background: #2f303a;
+}
+
+.footer {
+    display: flex;
+    &__address-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: inherit;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-right: 70px;
+    }
+    &__address-address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 1.7;
+    }
+    &__address-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__socials {
+        margin-top: 72px;
+    }
+    &__socials-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+}
+
+.logo {
+    &__footer-span {
+        color: #ffffff;
+    }
+}
+
+.socials {
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        color: #afb1b8;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.footer-form {
+    margin-top: 72px;
+    margin-left: auto;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+}
+
+.form {
+    &__input {
+        width: 358px;
+        height: 50px;
+        background: #2F303A;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+        padding-left: 16px;
+        margin-right: 12px;
+    }
+    &__label {
+        display: flex;
+        flex-direction: row;
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        fill: currentColor;
+    }
+    &__btn:hover {
+        background-color: #188CE8
+    }
+}

@@ -1,0 +1,26 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    margin: auto;
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        color: #afb1b8;
+        border-radius: 50%;
+    }
+    &__link:hover {
+        color: #FFFFFF;
+        background: #2196F3;
+        border-radius: 50%;
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        transition: color 250ms, background 250ms, border-radius 250ms;
+    }
+}

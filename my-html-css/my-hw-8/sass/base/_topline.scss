@@ -1,0 +1,17 @@
+.topline-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.menu {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.logo {
+    &__span-topline {
+        color: #212121;
+    }
+}

@@ -1,0 +1,22 @@
+.section {
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #212121;
+        margin-bottom: 50px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        margin-right: 30px;
+    }
+    &__item:nth-last-child(1) {
+        margin-right: 0;
+    }
+}
