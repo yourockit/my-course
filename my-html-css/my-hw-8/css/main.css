@@ -922,7 +922,7 @@ body.menu-open {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header-section {
-    background: url(../../images/header2x/img-header-mobile.jpg), rgba(47, 48, 58, 0.4);
+    background: url(../images/header2x/img-header-mobile.jpg), rgba(47, 48, 58, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -936,7 +936,7 @@ body.menu-open {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .header-section {
-    background: url(../../images/header2x/img-header-tablet.jpg), rgba(47, 48, 58, 0.4);
+    background: url(../images/header2x/img-header-tablet.jpg), rgba(47, 48, 58, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -950,7 +950,7 @@ body.menu-open {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .header-section {
-    background: url(../../images/header2x/img-header-desktop.jpg), rgba(47, 48, 58, 0.4);
+    background: url(../images/header2x/img-header-desktop.jpg), rgba(47, 48, 58, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
   }
