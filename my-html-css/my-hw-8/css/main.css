@@ -355,17 +355,6 @@ body.menu-open {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .card-clients {
-    width: calc((100% - 90px) / 3);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card-clients {
-    width: calc((100% - 180px) / 6);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .card-portfolio {
     width: calc((100% - 90px) / 3);
@@ -1094,6 +1083,16 @@ body.menu-open {
   height: 60px;
   fill: currentColor;
 }
+@media screen and (min-width: 768px) {
+  .card-clients {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-clients {
+    width: calc((100% - 180px) / 6);
+  }
+}
 
 .card-portfolio__img {
   display: block;
@@ -1138,6 +1137,11 @@ body.menu-open {
   font-size: 18px;
   line-height: 1.5;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .card-portfolio {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .title-container {

@@ -38,6 +38,9 @@
         line-height: 1.5;
         color: #FFFFFF;
     }
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 90px) / 3);
+    }
 }
 
 .title-container {

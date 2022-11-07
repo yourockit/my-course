@@ -111,4 +111,10 @@
         height: 60px;
         fill: currentColor;
     }
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 90px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 180px) / 6);
+    }
 }
