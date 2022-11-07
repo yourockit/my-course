@@ -11,6 +11,8 @@
 @mixin bg-img-header ($img) {
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background: $img;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
