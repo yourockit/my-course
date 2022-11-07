@@ -1,17 +1,17 @@
+.page {
+    position: relative;
+}
+
 .topline-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    border-bottom: 1px solid #ECECEC;
 }
 
-.menu {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.logo {
-    &__span-topline {
-        color: #212121;
+.menu-btn {
+    @media screen and (min-width: $tablet) {
+        display: none;
     }
 }

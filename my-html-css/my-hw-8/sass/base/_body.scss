@@ -1,5 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
-    // width: 1600px;
-    margin: auto;
+    @include media-page-width;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+body.menu-open {
+    overflow: hidden;
 }

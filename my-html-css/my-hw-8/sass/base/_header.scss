@@ -1,13 +1,26 @@
 .header-section {
-    background: url(../images/Img-header.jpg), rgba(47, 48, 58, 0.4);
+    background: url(../images/header/img-header-mobile.jpg), rgba(47, 48, 58, 0.4);
+    @include bg-img-header ($img-bg-mobile-2x);
     background-position: center center;
     background-size: cover;
+    @media screen and (min-width: $tablet) {
+        background: url(../images/header/img-header-tablet.jpg);
+        @include bg-img-header ($img-bg-tablet-2x);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media screen and (min-width: $desktop) {
+        background: url(../images/header/img-header-desktop.jpg);
+        @include bg-img-header ($img-bg-desktop-2x);
+        background-size: cover;
+    }
     &__main {
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         height: 400px;
+        @media screen and (min-width: $desktop) {
+            height: 600px;
+        }
     }
     &__title {
         text-align: center;
@@ -15,7 +28,7 @@
         font-size: 26px;
         line-height: 1.6;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $col-text-basic-wite;
         margin-bottom: 30px;
     }
 }

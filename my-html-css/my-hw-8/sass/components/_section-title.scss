@@ -1,13 +1,10 @@
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
     &__title {
         font-family: 'Roboto';
         font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
+        @include fs ($fs-mobile-title, $fs-desktop-title);
         text-align: center;
-        color: #212121;
+        color: $col-text-basic-black;
         margin-bottom: 30px;
     }
 }

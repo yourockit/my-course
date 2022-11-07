@@ -1,24 +1,7 @@
-.section {
-    &__title {
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        color: #212121;
-        margin-bottom: 30px;
-    }
-}
-
-//card-properties
+//CARD-PROPERTIES----------------------------------------------------
 .card-properties {
-    // width: 450px;
-    // margin-left: auto;
-    // margin-right: auto;
     &__icon-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
         height: 120px;
         background: #f5f4fa;
         border-radius: 4px;
@@ -33,7 +16,7 @@
         font-weight: 700;
         font-size: 14px;
         text-transform: uppercase;
-        color: #212121;
+        color: $col-text-basic-black;
         margin-bottom: 10px;
     }
     &__description {
@@ -41,14 +24,16 @@
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $col-text-secondary;
     }
 }
 
-//*card-features--------------------
+//CARD-FEATURES------------------------------------------------------
 .features {
-    //*is-hiden
     display: none;
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
 }
 
 .card-features {
@@ -56,6 +41,7 @@
     &__img {
         display: block;
     }
+    width: calc((100% - 90px) / 3);
     &__description {
         position: absolute;
         width: 100%;
@@ -64,7 +50,7 @@
         line-height: 1.15;
         text-align: center;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $col-text-basic-wite;
         background: rgba(47, 48, 58, 0.8);
         padding-top: 27px;
         padding-bottom: 27px;
@@ -73,7 +59,7 @@
     }
 }
 
-//*card-team----------------------
+//CARD-TEAM-----------------------------------------------------------
 .team {
     background: #F5f4fa;
 }
@@ -93,30 +79,29 @@
     }
     &__title {
         font-weight: 500;
-        font-size: 16px;
+        font-size: $fs-card-title;
         text-align: center;
-        color: #212121;
+        color: $col-text-basic-black;
         padding-top: 30px;
     }
     &__description {
-        font-size: 16px;
+        font-size: $fs-card-description;
         text-align: center;
-        color: #757575;
+        color: $col-text-secondary;
         margin-top: 10px;
         padding-bottom: 16px;
     }
 }
 
-//*section-clients--------------------
+//CAARD-CLIENTS------------------------------------------------------
 .card-clients {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
     transition: color 250ms, border-color 250ms;
+    width: calc((100% - 60px) / 2);
     &:hover {
         color: #2196F3;
         border-color: #2196F3;

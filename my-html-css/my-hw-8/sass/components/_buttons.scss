@@ -1,0 +1,56 @@
+.btn {
+    @extend %flex-center;
+    width: 200px;
+    height: 50px;
+    background: $col-btn-bg-basic;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    color: $col-btn-title-white;
+    @extend %margin-auto;
+    transition: background 250ms;
+    &:hover {
+        background-color: $col-btn-bg-hover-basic;
+    }
+}
+
+.menu-btn {
+    @extend %flex-center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    z-index: 2;
+    & .icon-cross {
+        display: none;
+    }
+    &.is-open .icon-cross {
+        display: block;
+    }
+    &.is-open .icon-menu {
+        display: none;
+    }
+}
+
+.btn-portfolio {
+    height: 38px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    background: #F5F4FA;
+    color: $col-btn-title-black;
+    box-shadow: none;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin: 5px;
+    transition: color 250ms, background 250ms, box-shadow 250ms;
+    &:hover {
+        background: $col-btn-bg-hover-basic;
+        color: $col-text-basic-wite;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
+}

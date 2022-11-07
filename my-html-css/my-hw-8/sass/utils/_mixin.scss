@@ -1,0 +1,44 @@
+//PAGE-BODY-WIDTH
+@mixin media-page-width {
+    @media screen and (min-width: $desktop) {
+        width: $w-desktop;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+//BG-IMG-HEADER
+@mixin bg-img-header ($img) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: $img;
+    }
+}
+
+//FONTSIZE
+@mixin fs ($size-m, $size-d) {
+    font-size: $size-m;
+    @media screen and (min-width: $desktop) {
+        font-size: $size-d;
+    }
+}
+
+//CONTAINER 
+@mixin media-container {
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
+}
+
+//ALIGN
+@mixin align ($align-m, $align-d) {
+    text-align: $align-m;
+    @media screen and (min-width: $desktop) {
+        text-align: $align-d;
+    }
+}

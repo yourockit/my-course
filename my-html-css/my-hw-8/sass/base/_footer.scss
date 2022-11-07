@@ -1,133 +1,69 @@
-// .btn-studio {
-//     width: 200px;
-// }
 .footer-bg {
     background: #2f303a;
 }
 
-.footer-content {
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        justify-content: space-between;
-    }
+.footer-title {
+    @include align (center, left);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $col-text-basic-wite;
+    margin-bottom: 20px;
 }
 
 .footer {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     @media screen and (min-width: $tablet) {
         display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    &__logo {
-        text-align: center;
-        margin-bottom: 20px;
-        @media screen and (min-width: $desktop) {
-            text-align: left;
-        }
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
     }
-    &__logo-span {
-        color: #ffffff;
-    }
-    &__address-section {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // height: inherit;
+    &__contacts-section {
         margin-bottom: 60px;
-        @media screen and (min-width: $tablet) {
-            // display: flex;
-            // justify-content: space-around;
-            margin-right: 165px;
-        }
         @media screen and (min-width: $desktop) {
-            // display: flex;
-            // justify-content: space-around;
-            margin-right: 70px;
+            margin: 0;
         }
     }
-    &__address {
-        // display: flex;
-        // align-items: center;
-        // flex-direction: column;
+    &__contacts {
         text-align: center;
-        // margin-top: 20px;
-        // margin-right: 70px;
         @media screen and (min-width: $desktop) {
             text-align: left;
         }
     }
-    &__address-address {
+    &__text-content {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        color: #ffffff;
         line-height: 1.7;
+        color: $col-text-basic-wite;
     }
-    &__address-link {
+    &__footer-link {
         display: block;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        color: rgba(255, 255, 255, 0.6);
+        color: $col-text-secondary;
     }
     &__socials {
         margin-bottom: 60px;
         @media screen and (min-width: $desktop) {
-            text-align: left;
+            margin-top: 12px;
+            margin-bottom: 0;
         }
     }
-    &__socials-title {
-        text-align: center;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        margin-bottom: 20px;
-        @media screen and (min-width: $desktop) {
-            text-align: left;
-        }
-    }
-}
-
-.logo-footer {
-    text-align: center;
 }
 
 .socials {
     &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        color: #afb1b8;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.1);
+        background: $col-icon-bg;
     }
 }
 
 .footer-form {
-    // display: inline;
-    // text-align: center;
-    // align-self: flex-end;
-    // margin-top: 60px;
-    margin-left: auto;
     @media screen and (min-width: $desktop) {
         margin: 0;
-    }
-    &__title {
-        text-align: center;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        @media screen and (min-width: $desktop) {
-            text-align: left;
-        }
+        margin-top: 12px;
     }
 }
 
@@ -143,27 +79,21 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
-        color: rgba(255, 255, 255, 0.6);
+        color: $col-text-secondary;
         padding-left: 16px;
         margin-bottom: 20px;
-        margin-top: 20px;
-        margin-right: auto;
         @media screen and (min-width: $tablet) {
             width: 450px;
-            margin-left: auto;
-            margin-right: auto;
         }
         @media screen and (min-width: $desktop) {
             width: 358px;
             margin-right: 12px;
+            margin-bottom: 0;
         }
     }
     &__label {
         width: 100%;
         display: block;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
         @media screen and (min-width: $desktop) {
             display: flex;
             align-items: center;

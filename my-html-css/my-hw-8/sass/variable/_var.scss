@@ -1,3 +1,40 @@
+//BODY-WIDTH---------------------------------------------------------
+$w-desktop: 1600px;
+//COLOR-TEXT---------------------------------------------------------
+$col-text-basic-black: #212121;
+$col-text-basic-wite: #ffffff;
+$col-text-secondary: #757575;
+$col-text-link: #2196F3;
+$col-text-hover: #2196F3;
+//LOGO---------------------------------------------------------------
+$fs-mobile-logo: 24px;
+$fs-desktop-logo: 26px;
+$col-logo-basic: #2196f3;
+$col-topline-logo: #212121;
+$col-footer-logo: #ffffff;
+//BG-IMG-HEADER-2X---------------------------------------------------
+$img-bg-mobile-2x: url(../../images/header2x/img-header-mobile.jpg);
+$img-bg-tablet-2x: url(../../images/header2x/img-header-tablet.jpg);
+$img-bg-desktop-2x: url(../../images/header2x/img-header-desktop.jpg);
+//CONTAINER-WIDTH----------------------------------------------------
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
+//TITLE-FONT-SIZE----------------------------------------------------
+$fs-mobile-title: 28px;
+$fs-desktop-title: 36px;
+//ICON---------------------------------------------------------------
+$col-icon-basic: #afb1b8;
+$col-icon-bg: rgba(255, 255, 255, 0.1);
+$col-icon-hover: #ffffff;
+$col-icon-hover-bg: #2196f3;
+//BUTTONS------------------------------------------------------------
+$col-btn-title-white: #ffffff;
+$col-btn-title-black: #212121;
+$col-btn-bg-basic: #2196f3;
+$col-btn-bg-secondary: #F5F4FA;
+$col-btn-bg-hover-basic: #188CE8;
+$col-btn-bg-hover-secondary: #2196F3;
+//CARD---------------------------------------------------------------
+$fs-card-title: 16px;
+$fs-card-description: 16px;

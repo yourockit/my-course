@@ -5,6 +5,9 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    padding: 15px;
+    z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -14,14 +17,17 @@
 
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+    width: calc(100vw - 30px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    }
     &__btn-close {
         position: absolute;
         top: 8px;
@@ -47,8 +53,7 @@
         font-weight: 700;
         font-size: 20px;
         text-align: center;
-        color: #212121;
-        margin-top: 40px;
+        color: $col-text-basic-black;
         margin-bottom: 30px;
     }
 }
@@ -56,8 +61,6 @@
 .modal-form {
     &__field {
         position: relative;
-        width: 448px;
-        margin: auto;
         text-align: center;
         margin-bottom: 28px;
     }
@@ -75,7 +78,7 @@
         left: 35px;
         font-weight: 400;
         font-size: 12px;
-        color: #757575;
+        color: $col-text-secondary;
         transform: translateY(-50%);
         transition: transform 250ms linear;
     }
@@ -102,7 +105,7 @@
         left: 12px;
         font-weight: 400;
         font-size: 12px;
-        color: #757575;
+        color: $col-text-secondary;
     }
     &__icon {
         width: 18px;
@@ -110,13 +113,12 @@
         fill: currentColor;
     }
     &__label-checkbox {
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         font-weight: 400;
-        font-size: 14px;
-        color: #757575;
+        font-size: 12px;
+        color: $col-text-secondary;
     }
     &__input-checkbox {
         appearance: none;
@@ -124,27 +126,16 @@
         -moz-appearance: none;
         position: absolute;
     }
-    &__icon-checkbox-wrapper {
-        display: inline-block;
-        margin-right: 7px;
-    }
     &__icon-checkbox {
-        position: absolute;
         width: 16px;
         height: 15px;
-        top: 50%;
-        left: 20px;
-        transform: translateY(-50%);
+        margin-right: 4px;
     }
     &__link-checkbox {
-        color: #2196F3;
+        color: $col-text-link;
         text-decoration: underline;
         text-underline-position: under;
-        margin-left: 4px;
-    }
-    &__submit {
-        width: 200px;
-        margin: auto;
+        margin-left: 2px;
     }
 }
 
@@ -169,14 +160,14 @@
     outline: none;
 }
 
-.modal-form__icon-checkbox-wrapper>.modal-form__icon-checkbox:nth-child(1) {
-    opacity: 0;
+.modal-form__icon-checkbox>.icon-check-on {
+    display: none;
 }
 
-.modal-form__input-checkbox:checked+.modal-form__icon-checkbox-wrapper>.modal-form__icon-checkbox:nth-child(1) {
-    opacity: 1;
+.modal-form__input-checkbox:checked+.modal-form__icon-checkbox>.icon-check-on {
+    display: block;
 }
 
-.modal-form__input-checkbox:checked+.modal-form__icon-checkbox-wrapper>.modal-form__icon-checkbox:nth-child(2) {
-    opacity: 0;
+.modal-form__input-checkbox:checked+.modal-form__icon-checkbox>.icon-check-off {
+    display: none;
 }

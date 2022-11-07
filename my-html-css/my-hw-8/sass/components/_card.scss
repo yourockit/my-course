@@ -15,11 +15,16 @@
 }
 
 .card-clients {
-    width: calc((100% - 60px) / 2);
     @media screen and (min-width: $tablet) {
         width: calc((100% - 90px) / 3);
     }
     @media screen and (min-width: $desktop) {
         width: calc((100% - 180px) / 6);
+    }
+}
+
+.card-portfolio {
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 90px) / 3);
     }
 }

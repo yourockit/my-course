@@ -1,0 +1,61 @@
+.card-portfolio {
+    &__img {
+        display: block;
+        width: 100%;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: $fs-card-title;
+        color: $col-text-basic-black;
+        margin-bottom: 10px;
+    }
+    &__description {
+        font-weight: 400px;
+        font-size: $fs-card-description;
+        color: $col-text-secondary;
+    }
+    &__container {
+        position: relative;
+        overflow: hidden;
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover &__overlay {
+        transform: translateY(0);
+    }
+    &__overlay-content {
+        padding: 63px 24px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #FFFFFF;
+    }
+}
+
+.title-container {
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: -5px;
+    margin-bottom: 40px;
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
+}
