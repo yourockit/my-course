@@ -13,9 +13,3 @@
         }
     }
 }
-
-.card-portfolio {
-    @media screen and (min-width: $desktop) {
-        width: calc((100% - 90px) / 3);
-    }
-}

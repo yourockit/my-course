@@ -355,12 +355,6 @@ body.menu-open {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .card-portfolio {
-    width: calc((100% - 90px) / 3);
-  }
-}
-
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,30 +921,30 @@ body.menu-open {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header-section {
-    background-image: url(../../images/header2x/img-header-mobile.jpg);
+    background-image: url(../../images/header2x/img-header-mobile.jpg), rgba(47, 48, 58, 0.4);
   }
 }
 @media screen and (min-width: 768px) {
   .header-section {
-    background: url(../images/header/img-header-tablet.jpg);
+    background: url(../images/header/img-header-tablet.jpg), rgba(47, 48, 58, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .header-section {
-    background-image: url(../../images/header2x/img-header-tablet.jpg);
+    background-image: url(../../images/header2x/img-header-tablet.jpg), rgba(47, 48, 58, 0.4);
   }
 }
 @media screen and (min-width: 1200px) {
   .header-section {
-    background: url(../images/header/img-header-desktop.jpg);
+    background: url(../images/header/img-header-desktop.jpg), rgba(47, 48, 58, 0.4);
     background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .header-section {
-    background-image: url(../../images/header2x/img-header-desktop.jpg);
+    background-image: url(../../images/header2x/img-header-desktop.jpg), rgba(47, 48, 58, 0.4);
   }
 }
 .header-section__main {
