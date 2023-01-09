@@ -7,7 +7,6 @@ const gallery = document.querySelector('.gallery');
 const galleryMarkup = createGalleryCardMarkup(galleryItems);
 
 gallery.insertAdjacentHTML('beforeend', galleryMarkup);
-// gallery.addEventListener('click', onGalleryCardClick);
 
 function createGalleryCardMarkup(galleryItems) {
     return galleryItems.map(({ preview, original, description }) => {
