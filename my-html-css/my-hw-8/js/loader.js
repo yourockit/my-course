@@ -9,8 +9,8 @@
           <img src="./images/loader-volvo.gif"/>
       </div>
   </div>`;
-    setTimeout(() => {
-      window.location.href = link;
-    }, 2000);
+    // setTimeout(() => {
+    //   window.location.href = link;
+    // }, 2000);
   });
 })();
