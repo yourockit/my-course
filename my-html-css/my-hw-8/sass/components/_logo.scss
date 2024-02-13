@@ -1,18 +1,18 @@
-    .logo {
-        display: block;
-        font-family: 'Raleway';
-        font-weight: 700;
-        @include fs ($fs-mobile-logo, $fs-desktop-logo);
-        color: $col-logo-basic;
-        &__topline-align {}
-        &__footer-align {
-            @include align (center, left);
-            margin-bottom: 20px;
-        }
-        &__span-topline {
-            color: $col-topline-logo;
-        }
-        &__span-footer {
-            color: $col-footer-logo;
-        }
-    }
+.logo {
+  display: block;
+  font-family: "Raleway";
+  font-weight: 700;
+  cursor: pointer;
+  @include fs($fs-mobile-logo, $fs-desktop-logo);
+  color: $col-logo-basic;
+  &__footer-align {
+    @include align(center, left);
+    margin-bottom: 20px;
+  }
+  &__span-topline {
+    color: $col-topline-logo;
+  }
+  &__span-footer {
+    color: $col-footer-logo;
+  }
+}
